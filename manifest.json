@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Feed Blocker",
+  "version": "1.1",
+  "description": "Blocks the Instagram feed to reduce distractions.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
